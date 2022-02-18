@@ -1,0 +1,75 @@
+[09:29:41] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[09:30:18] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[09:30:18] [Server thread/INFO]: Generating keypair
+[09:30:18] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
+[09:30:18] [Server thread/INFO] [FML]: Applying holder lookups
+[09:30:18] [Server thread/INFO] [FML]: Holder lookups applied
+[09:30:18] [Server thread/INFO] [FML]: Loading dimension 0 (forest_survival) (net.minecraft.server.integrated.IntegratedServer@2ae11995)
+[09:30:19] [Server thread/INFO] [FML]: Loading dimension 1 (forest_survival) (net.minecraft.server.integrated.IntegratedServer@2ae11995)
+[09:30:19] [Server thread/INFO] [FML]: Loading dimension -1 (forest_survival) (net.minecraft.server.integrated.IntegratedServer@2ae11995)
+[09:30:19] [Server thread/INFO]: Preparing start region for level 0
+[09:30:19] [Server thread/INFO]: Changing view distance to 4, from 10
+[09:30:20] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[09:30:20] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Attempting to transform MinecraftServer
+[09:30:20] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[09:30:20] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[09:30:20] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[09:30:20] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.0.2228,mcp@9.19
+[09:30:20] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[09:30:20] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[09:30:20] [Server thread/INFO]: Player55[local:E:7d9f1780] logged in with entity id 187 at (-80.69999998807907, 58.0, 310.30000001192093)
+[09:30:20] [Server thread/INFO]: Player55 joined the game
+[09:30:21] [Server thread/INFO]: Saving and pausing game...
+[09:30:21] [Server thread/INFO]: Saving chunks for level 'forest_survival'/Overworld
+[09:30:21] [Server thread/INFO]: Saving chunks for level 'forest_survival'/Nether
+[09:30:21] [Server thread/INFO]: Saving chunks for level 'forest_survival'/The End
+[09:30:21] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@723604da[id=44d903f8-18c4-31d1-b8f3-054c7e2bcb1f,name=Player55,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3056) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_212]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+[09:30:31] [Client thread/INFO]: [STDOUT]: Toggling control between human and AI - now HUMAN
+[09:31:18] [Server thread/INFO]: Player55 has just earned the achievement [Taking Inventory]
+[09:31:18] [Client thread/INFO]: [CHAT] Player55 has just earned the achievement [Taking Inventory]
+[09:31:24] [Server thread/INFO]: Player55 has just earned the achievement [Getting Wood]
+[09:31:24] [Client thread/INFO]: [CHAT] Player55 has just earned the achievement [Getting Wood]
+[09:32:55] [Client thread/INFO]: [STDOUT]: Toggling control between human and AI - now AI
+[09:32:56] [Client thread/INFO]: Stopping!
+[09:32:56] [Client thread/INFO]: [STDOUT]: Unpausing
+[09:32:56] [Server thread/INFO]: Stopping server
+[09:32:56] [Server thread/INFO]: Saving players
+[09:32:56] [Server thread/INFO]: Saving worlds
+[09:32:56] [Server thread/INFO]: Saving chunks for level 'forest_survival'/Overworld
+[09:32:56] [Server thread/INFO]: Saving chunks for level 'forest_survival'/Nether
+[09:32:56] [Server thread/INFO]: Saving chunks for level 'forest_survival'/The End
+[09:32:56] [Server thread/INFO]: [STDOUT]: Unpausing
+[09:32:56] [Server thread/INFO]: [STDOUT]: Unpausing
+[09:32:56] [Server thread/INFO]: [STDOUT]: Unpausing
+[09:32:56] [Server thread/INFO] [FML]: Unloading dimension 0
+[09:32:56] [Server thread/INFO] [FML]: Unloading dimension -1
+[09:32:56] [Server thread/INFO] [FML]: Unloading dimension 1
+[09:32:56] [Client thread/INFO]: SoundSystem shutting down...
+[09:32:56] [Server thread/INFO] [FML]: Applying holder lookups
+[09:32:56] [Server thread/INFO] [FML]: Holder lookups applied
+[09:32:56] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+
+BUILD SUCCESSFUL
+
+Total time: 3 mins 34.565 secs

@@ -1,0 +1,83 @@
+[11:26:47] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[11:31:50] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[11:31:50] [Server thread/INFO]: Generating keypair
+[11:31:50] [Server thread/INFO] [FML]: Injecting existing block and item data into this server instance
+[11:31:50] [Server thread/INFO] [FML]: Applying holder lookups
+[11:31:50] [Server thread/INFO] [FML]: Holder lookups applied
+[11:31:50] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@b347a40)
+[11:31:50] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@b347a40)
+[11:31:50] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@b347a40)
+[11:31:50] [Server thread/INFO]: Preparing start region for level 0
+[11:31:51] [Server thread/INFO]: Preparing spawn area: 10%
+[11:31:52] [Server thread/INFO]: Preparing spawn area: 23%
+[11:31:53] [Server thread/INFO]: Preparing spawn area: 37%
+[11:31:54] [Server thread/INFO]: Preparing spawn area: 54%
+[11:31:55] [Server thread/INFO]: Preparing spawn area: 70%
+[11:31:56] [Server thread/INFO]: Preparing spawn area: 84%
+[11:31:57] [Server thread/INFO]: Preparing spawn area: 97%
+[11:31:58] [Server thread/INFO]: Changing view distance to 4, from 10
+[11:31:59] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[11:31:59] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Attempting to transform MinecraftServer
+[11:31:59] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[11:31:59] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[11:31:59] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[11:31:59] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.0.2228,mcp@9.19
+[11:31:59] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[11:31:59] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[11:31:59] [Server thread/INFO]: Player303[local:E:193ceb11] logged in with entity id 2868 at (-237.5, 68.0, 201.5)
+[11:31:59] [Server thread/INFO]: Player303 joined the game
+[11:32:00] [Server thread/INFO]: Saving and pausing game...
+[11:32:00] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[11:32:00] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[11:32:00] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[11:32:00] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@66b28ada[id=2737bbb4-080a-3670-89c1-780a32c86c5a,name=Player303,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:60) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:57) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:170) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3056) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:138) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_212]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [?:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_212]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_212]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_212]
+[11:32:13] [Client thread/INFO]: [STDOUT]: Toggling control between human and AI - now HUMAN
+[11:32:14] [Client thread/INFO]: [STDOUT]: Toggling control between human and AI - now AI
+[11:32:17] [Client thread/INFO]: [STDOUT]: Toggling control between human and AI - now HUMAN
+[11:34:36] [Server thread/INFO]: Player303 has just earned the achievement [Taking Inventory]
+[11:34:36] [Client thread/INFO]: [CHAT] Player303 has just earned the achievement [Taking Inventory]
+[11:52:24] [Server thread/INFO]: Player303 was shot by Skeleton
+[11:52:24] [Client thread/INFO]: [CHAT] Player303 was shot by Skeleton
+[11:52:39] [Client thread/INFO]: Stopping!
+[11:52:39] [Client thread/INFO]: [STDOUT]: Unpausing
+[11:52:39] [Server thread/INFO]: Stopping server
+[11:52:39] [Server thread/INFO]: Saving players
+[11:52:39] [Server thread/INFO]: Saving worlds
+[11:52:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[11:52:39] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[11:52:39] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[11:52:39] [Server thread/INFO]: [STDOUT]: Unpausing
+[11:52:39] [Server thread/INFO]: [STDOUT]: Unpausing
+[11:52:39] [Server thread/INFO]: [STDOUT]: Unpausing
+[11:52:39] [Server thread/INFO] [FML]: Unloading dimension 0
+[11:52:39] [Server thread/INFO] [FML]: Unloading dimension -1
+[11:52:39] [Server thread/INFO] [FML]: Unloading dimension 1
+[11:52:39] [Client thread/INFO]: SoundSystem shutting down...
+[11:52:39] [Server thread/INFO] [FML]: Applying holder lookups
+[11:52:39] [Server thread/INFO] [FML]: Holder lookups applied
+[11:52:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+
+BUILD SUCCESSFUL
+
+Total time: 26 mins 20.322 secs
